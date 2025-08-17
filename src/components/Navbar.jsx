@@ -27,12 +27,12 @@ export default function Navbar(props) {
           </div>
           <div className={`form-check form-switch text-${(props.mode === "green" || props.mode === "dark") ? "light" : "dark"}`}>
             <input className="form-check-input" type="checkbox" role="switch" id="switchCheckDefault" onClick={() => props.toggleMode("dark")} />
-            <label className="form-check-label" htmlFor="switchCheckDefault" >Switch</label>
+            <label className="form-check-label" htmlFor="switchCheckDefault" ><b>Switch</b></label>
           </div>
-          <div className={`form-check form-switch text-${props.mode === "green" || props.mode === "dark" ? "light" : "dark"}`}>
+          {/* <div className={`form-check form-switch text-${props.mode === "green" || props.mode === "dark" ? "light" : "dark"}`}>
             <input className="form-check-input" type="checkbox" role="switch" id="switchDefault" onClick={() => props.toggleMode("green")} />
             <label className="form-check-label" htmlFor="switchCheckDefault" >Switch</label>
-          </div>
+          </div> */}
         </div>
       </nav>
     </>
